@@ -1,0 +1,224 @@
+/* background-image sirve para poder poner 
+una imagen de fondo  */
+body{
+	background-image:url("../imagenes/fondo.jpg");
+	color:#000000;
+	font-family:"Courier New", "New York";
+	font-size: 40px;
+}
+
+p{
+	text-align: jstify;
+	font-size: 20px;
+}
+
+hr{
+	/*solid es para que la linea salga entera y sin deseño */
+	border: 3px solid #641E16;
+	border-radius: 5px;
+	width: 80%;
+}
+
+table,tr,td{
+	border:2px solid #641E16;
+	border-spacing: 0px;
+	background-color: #F9E79F;
+	text-align: center;
+	font-size:20px;
+}
+
+ul{
+	list-style-type:circle;
+	list-style-position: inside;
+}
+
+ol{
+	list-style-type:lower-alpha;
+	list-style-position: inside;
+}
+
+@font-face{
+	font-family: mifuente;
+	src:(../fonts/BASKVILL.ttf)
+}
+
+/*las clases se marcan de color rojo y pues lo que no es clase es de color azul*/
+.pie{
+	/*el punto en el pie es para indicar que es una clase y para ponerlo en las demas paginas usas el codigo <p class="pie"*/
+	font-size:15px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.encabezado{
+	/*para que se modifique en las paginas se usa el mismo codigo que en pie y se cambia en donde diga "FONT SIZE"*/
+	font-family: mifuente;
+	font-size:35px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.img-marquee{
+	height: 400px;
+	width:600px;	
+}
+.img-controller{
+	height:50px;
+	width:50px;
+}
+.img{
+	height:300px;
+	width:300px;
+}
+
+.img-servicios{
+	height:200px;
+	width:300px;
+	border-radius: 5%;
+}
+
+.img-boton{
+	height: 100px;
+	width:100px;	
+}
+
+*{
+	margin:0px;
+}
+/*para poder poner el div en html se pone el codigo <div id="top">*/
+div#top{
+	padding:30px;
+	width:100%;
+	height:70px;
+	/*background-color:#FFE19F;*/
+	background-image:linear-gradient(#9B2A2A ,#DEB363);
+}
+
+div#piediv{
+	padding:15px;
+	width:100%;
+	height:80px;
+	background-image:linear-gradient(#DEB363,#9B2A2A);
+}
+
+div#principal{
+	width:100%;
+	background-color:#7E1C23;
+}
+
+.caja{
+	height:400px;
+	width:310px;
+	background:#F5EFE8 ;
+	border: 1px solid #F5EFE8 ;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+
+.caja:hover{
+	box-shadow:0 0 10px red;
+	transform:scale(1.3);
+}
+
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:maroon;
+	font-weight:bold;
+}
+
+.texto-adicional{
+	padding-top:5px;
+	
+	font-size:15px;
+}
+
+.carrousel{
+	width:600px;
+	margin:auto;
+	/*hace que el padding y el borde pasen a formar parte del calculo de la caja y no de la suma */
+	box-sizing:border-box;
+}
+
+.conteCarrousel{
+	width:100%;
+	height:400px;
+	/*el overflow sirve para que oculte todo lo que no salga en el recuadro*/
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemCarrousel{
+	/*la nueva posicion del elemento en relacion de un elemento con su posicion normal*/
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+
+.itemCarrouselTarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+
+.itemCarrouselArrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:100%;
+	/*aqui me quede*/
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemCarrouselArrows>i:hover{
+	cursor:pointer;
+}
+
+.conteCarrouselController{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+
+.conteCarrouselController>a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+
+.itemCarrouselArrows>a>i{
+	color:white;
+}
+div#descripcion{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:#DEB363;
+	font-weight:bold;
+}
+@font-face2{
+	font-family: mifuente;
+	src:(../fonts/BASKVILL.ttf)
+}
+.caja-eventosSociales{
+	font-family: mifuente;
+	width:920px;
+	background:#DEB363;
+	border:1px solid #DEB363;
+	margin:10px;
+	color:black;
+	text-align:center;
+}
+
+
+
+
